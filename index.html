@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vaishnavi S | AI/ML Developer &amp; Backend Engineer</title>
+<meta name="description" content="Vaishnavi S, final-year Information Science and Engineering student building AI, computer vision and backend systems.">
+<style>
+:root{--bg:#fafbff;--surface:#ffffff;--text:#1b2333;--muted:#5b667a;--accent:#5b5bd6;--accent-soft:#ececfb;--border:#e2e6f0;--hdr:#fafbffee;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1220;--surface:#161b2e;--text:#e7eaf3;--muted:#9aa4ba;--accent:#9b9dff;--accent-soft:#232a4a;--border:#27304a;--hdr:#0e1220ee;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1220;--surface:#161b2e;--text:#e7eaf3;--muted:#9aa4ba;--accent:#9b9dff;--accent-soft:#232a4a;--border:#27304a;--hdr:#0e1220ee;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hdr);z-index:10}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--hdr);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.bar{max-width:1040px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{font-weight:800;letter-spacing:.04em;color:var(--text)}
+nav{display:flex;gap:16px;margin-left:auto;flex-wrap:wrap;font-size:.92rem}
+nav a{color:var(--muted)}nav a:hover{color:var(--accent);text-decoration:none}
+#theme{background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:999px;padding:4px 12px;cursor:pointer;font-size:.85rem}
+main{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:56px 0 8px}
+.eyebrow{color:var(--accent);font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);margin:.2em 0 .3em;line-height:1.2}
+.sub{color:var(--muted);max-width:640px;margin:0 0 24px}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:center;padding-top:48px}
+.badge{display:inline-block;background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:4px 14px;font-size:.82rem;font-weight:600}
+h1{font-size:clamp(2.2rem,7vw,3.6rem);line-height:1.05;margin:.3em 0 .1em;letter-spacing:-.02em}
+.role{color:var(--muted);font-size:1.1rem;margin:0 0 14px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.btn{border:1px solid var(--border);background:var(--surface);color:var(--text);padding:9px 18px;border-radius:10px;font-weight:600;font-size:.92rem}
+.btn.p{background:var(--accent);border-color:var(--accent);color:#fff}.btn:hover{text-decoration:none;filter:brightness(1.06)}
+.avatar{width:min(220px,60vw);aspect-ratio:1;border-radius:28%;background:linear-gradient(135deg,var(--accent),#c28bff);display:grid;place-items:center;color:#fff;font-size:4rem;font-weight:800;justify-self:center}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:36px}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px;text-align:center}
+.stat b{display:block;font-size:1.5rem;color:var(--accent)}.stat span{color:var(--muted);font-size:.85rem}
+.grid{display:grid;gap:16px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:20px}
+.card h3{margin:.2em 0 .3em;font-size:1.1rem}.card p{margin:.3em 0;color:var(--muted);font-size:.93rem}
+.tag{font-size:.72rem;font-weight:700;letter-spacing:.1em;color:var(--accent);text-transform:uppercase}
+.flag{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.card ul{margin:10px 0;padding-left:18px;color:var(--muted);font-size:.92rem}.card li{margin:4px 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chip{background:var(--accent-soft);color:var(--accent);border-radius:8px;padding:3px 10px;font-size:.78rem;font-weight:600}
+.links{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;font-weight:600;font-size:.9rem}
+.tl{border-left:2px solid var(--border);padding-left:20px;display:grid;gap:18px}
+.tl .card{position:relative}.tl .card::before{content:"";position:absolute;left:-28px;top:26px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.date{color:var(--muted);font-size:.85rem}
+footer{max-width:1040px;margin:56px auto 0;padding:24px 20px 40px;border-top:1px solid var(--border);color:var(--muted);font-size:.88rem;text-align:center}
+.cta{text-align:center;background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:36px 20px}
+@media(max-width:820px){.hero{grid-template-columns:1fr}.avatar{order:-1;justify-self:start;width:120px;font-size:2.4rem}.g4,.g3{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.g4,.g3,.g2{grid-template-columns:1fr}nav{display:none}.bar{justify-content:space-between}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a class="logo" href="#top">VAISHNAVI.S</a>
+<nav><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+<button id="theme" type="button" aria-label="Toggle light or dark theme">Theme</button>
+</div></header>
+<main id="top">
+<div class="hero">
+<div>
+<span class="badge">Open to internships and 2027 roles</span>
+<h1>VAISHNAVI S</h1>
+<p class="role">AI/ML Developer · Backend (FastAPI) · Computer Vision</p>
+<p>Final-year Information Science and Engineering student at Vemana IT, Bengaluru. I build AI applications, computer vision models and backend systems, and I like taking an idea all the way to a live demo.</p>
+<div class="btns">
+<a class="btn p" href="#work">View My Work</a>
+<a class="btn" href="https://github.com/VaishnaviS249">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/vaishnavi-s-07900428b">LinkedIn</a>
+</div>
+</div>
+<div class="avatar" aria-hidden="true">VS</div>
+</div>
+<div class="stats">
+<div class="stat"><b>8.93</b><span>CGPA</span></div>
+<div class="stat"><b>2</b><span>Internships</span></div>
+<div class="stat"><b>5</b><span>Projects</span></div>
+<div class="stat"><b>2027</b><span>Graduating</span></div>
+</div>
+
+<section><div class="grid g4">
+<div class="card"><span class="tag">AI</span><h3>AI and LLM Apps</h3><p>NLP, prompt-driven extraction and the Gemini API.</p></div>
+<div class="card"><span class="tag">CV</span><h3>Computer Vision</h3><p>YOLOv8 detection, OpenCV and medical image analysis.</p></div>
+<div class="card"><span class="tag">API</span><h3>Backend</h3><p>FastAPI REST services backed by PostgreSQL.</p></div>
+<div class="card"><span class="tag">Data</span><h3>Data Analysis</h3><p>Pandas, visualization and anomaly detection.</p></div>
+</div></section>
+
+<section id="work">
+<span class="eyebrow">Selected Work</span>
+<h2>Projects I’m proud of.</h2>
+<p class="sub">Full-stack AI systems, a team project in medical imaging, and data work from my internships.</p>
+<div class="grid">
+<div class="card flag">
+<span class="tag">★ Flagship · Medical AI · Team Project</span>
+<h3>MediAI: Medical Deepfake Detector and Anomaly Localization</h3>
+<p>A full-stack clinical AI system that detects and localizes synthetic manipulations (deepfakes) in chest CT/X-ray and brain MRI scans. A DenseNet-121 classifier gives a real-vs-fake probability with Grad-CAM heatmaps, and a YOLOv8 engine marks tampered regions.</p>
+<ul>
+<li><b>My part:</b> built the YOLOv8n localization module, which draws bounding boxes with confidence scores on injected tumors, lesion erasures and synthetic artifacts.</li>
+<li>Two-pass adaptive detection (0.28 primary, 0.24 sensitive threshold) catches faint tampering.</li>
+<li>Trained on dataset03 with CT-GAN and Poisson-blended injections, using real scans as negative samples to reduce false alarms.</li>
+<li>Served by a FastAPI backend and a React dashboard, deployed live.</li>
+</ul>
+<div class="chips"><span class="chip">Python</span><span class="chip">YOLOv8</span><span class="chip">DenseNet-121</span><span class="chip">Grad-CAM</span><span class="chip">FastAPI</span><span class="chip">React</span></div>
+<div class="links"><a href="https://github.com/VaishnaviS249/MediAI-Medical-Deepfake-Detector">GitHub ↗</a><a href="https://dynamic-kringle-45a89d.netlify.app/">Live App ↗</a><a href="https://mediai-backend-1kuv.onrender.com">Backend API ↗</a></div>
+</div>
+<div class="card">
+<span class="tag">★ Featured · AI / NLP</span>
+<h3>LeaseGuard Pro: AI Lease Analysis System</h3>
+<p>An end-to-end AI system that analyzes lease documents with NLP and the Gemini API, automatically extracting clauses and detecting hidden costs from unstructured text.</p>
+<ul><li>Backend APIs with FastAPI and a PostgreSQL data layer.</li><li>Model outputs presented in an interactive dashboard.</li></ul>
+<div class="chips"><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Gemini API</span><span class="chip">NLP</span><span class="chip">PostgreSQL</span></div>
+<div class="links"><a href="https://github.com/VaishnaviS249/car-lease-contract-assistant">GitHub ↗</a><a href="https://leaseguard-frontend.onrender.com">Live Dashboard ↗</a></div>
+</div>
+</div>
+<div class="grid g3" style="margin-top:16px">
+<div class="card"><span class="tag">Data · IEEE Internship</span><h3>CANWatch</h3><p>A Python-based CAN Bus data logger and analytics tool. I led the team, captured CAN frames (ID, timestamp, payload), structured them for analysis and ran anomaly detection and traffic pattern analysis.</p><div class="chips"><span class="chip">Python</span><span class="chip">Data Viz</span></div></div>
+<div class="card"><span class="tag">Computer Vision</span><h3>Road Damage Detection</h3><p>Set up and ran an open-source YOLOv8 application (CRDDC2022 dataset) that detects road damage in images and video, and debugged environment and dependency issues.</p><div class="chips"><span class="chip">YOLOv8</span><span class="chip">OpenCV</span></div></div>
+<div class="card"><span class="tag">Analytics</span><h3>Titanic EDA</h3><p>Cleaned the dataset, handled missing values, encoded features and found survival trends linked to gender, class and age.</p><div class="chips"><span class="chip">Pandas</span><span class="chip">Seaborn</span></div></div>
+</div>
+</section>
+
+<section id="experience">
+<span class="eyebrow">Experience</span>
+<h2>Where I’ve worked.</h2>
+<div class="tl">
+<div class="card"><span class="date">Dec 2025 – Feb 2026</span><h3>Intern · Infosys Springboard</h3><ul><li>Worked on AI/ML workflows including data preprocessing, feature selection and basic model evaluation.</li><li>Implemented data-driven solutions and improved my understanding of model performance metrics.</li></ul></div>
+<div class="card"><span class="date">Apr 2025 – Sept 2025</span><h3>Team Lead · IEEE Computer Society Internship Program</h3><ul><li>Led development of CANWatch, a Python-based CAN Bus data logger and analytics tool.</li><li>Captured and processed CAN frames and structured the data for analysis.</li><li>Performed anomaly detection and traffic pattern analysis using data visualization.</li></ul></div>
+</div>
+</section>
+
+<section id="skills">
+<span class="eyebrow">Skills</span>
+<h2>Tools of the trade.</h2>
+<div class="grid g3">
+<div class="card"><h3>Languages</h3><div class="chips"><span class="chip">Python</span><span class="chip">Java</span><span class="chip">C</span><span class="chip">R</span><span class="chip">SQL</span></div></div>
+<div class="card"><h3>AI and ML</h3><div class="chips"><span class="chip">Machine Learning</span><span class="chip">NLP</span><span class="chip">Computer Vision</span><span class="chip">YOLOv8</span><span class="chip">OpenCV</span><span class="chip">Gemini API</span></div></div>
+<div class="card"><h3>Backend and Data</h3><div class="chips"><span class="chip">FastAPI</span><span class="chip">REST APIs</span><span class="chip">PostgreSQL</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Streamlit</span></div></div>
+<div class="card"><h3>Visualization</h3><div class="chips"><span class="chip">Matplotlib</span><span class="chip">Seaborn</span><span class="chip">Power BI</span></div></div>
+<div class="card"><h3>Tools</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Linux</span></div></div>
+<div class="card"><h3>Fundamentals</h3><div class="chips"><span class="chip">Data Structures and Algorithms</span><span class="chip">Feature Engineering</span><span class="chip">Problem Solving</span></div></div>
+</div>
+</section>
+
+<section id="education">
+<span class="eyebrow">Education</span>
+<h2>Vemana IT.</h2>
+<div class="card"><span class="date">2023 – 2027</span><h3>B.E. Information Science and Engineering</h3><p>Visvesvaraya Technological University (Vemana Institute of Technology), Bengaluru · CGPA 8.93 (till 7th semester)</p></div>
+<h2 style="margin-top:36px;font-size:1.4rem">Certifications and achievements</h2>
+<div class="grid g3">
+<div class="card"><h3>🏅 Infosys STEM Scholar</h3><p>Selected among top candidates nationwide.</p></div>
+<div class="card"><h3>🌍 Aspire Leaders Program</h3><p>Selected for the global leadership program founded at Harvard.</p></div>
+<div class="card"><h3>🎓 Certifications</h3><p>Applied Generative AI (Infosys Springboard), Applied AI (IBM SkillsBuild), Foundations of AI and ML (Coursera), NPTEL: Data Science for Engineers and Programming and DSA using Python.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="cta">
+<span class="eyebrow">Contact</span>
+<h2>Let’s build something useful.</h2>
+<p class="sub" style="margin-inline:auto">Looking for an internship or a 2027 role in AI, backend or data engineering? I’d love to hear from you.</p>
+<div class="btns" style="justify-content:center">
+<a class="btn p" href="mailto:svaishnavi2495@gmail.com">Email Me →</a>
+<a class="btn" href="https://github.com/VaishnaviS249">GitHub ↗</a>
+<a class="btn" href="https://www.linkedin.com/in/vaishnavi-s-07900428b">LinkedIn ↗</a>
+</div>
+</div>
+</section>
+</main>
+<footer>© 2026 Vaishnavi S · Bengaluru, India</footer>
+<script>
+(function(){var r=document.documentElement,b=document.getElementById("theme");
+function cur(){var t=r.getAttribute("data-theme");return t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}
+b.addEventListener("click",function(){r.setAttribute("data-theme",cur()==="dark"?"light":"dark")});})();
+</script>
+</body>
+</html>
